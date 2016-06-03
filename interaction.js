@@ -21,4 +21,4 @@ var minutesLabel = document.getElementById("minutes");
            {
                return valString;
            }
-       }
+       };
