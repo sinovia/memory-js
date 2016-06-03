@@ -14,6 +14,10 @@ font-size: 65px;
 padding-top: 50px;
 }
 
+.lifebar {
+  margin-left: 5px;
+}
+
 ul {
   list-style-type: none;
 }
@@ -32,17 +36,33 @@ ul#hearts li {
 
 .grid {
 	width: 100%;
-	max-width: 1140px;
 	min-width: 748px; /* when using padded grid on ipad in portrait mode, width should be viewport-width - padding = (768 - 20) = 748. actually, it should be even smaller to allow for padding of grid containing element */
-	margin: 0 auto;
 	overflow: hidden;
-  border: 1px black solid;
+  padding-left: 20px;
+}
+
+.grid-pad {
+	padding-top: 20px;
+	padding-left: 20px; /* grid-space to left */
+	padding-right: 0;
+  margin-left: 25px;
+  margin-right: 20px;
+  margin-right:auto;/* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .col-1-6, .col-2-12 {
-	width: 16.667%;
-  border: 1px solid red;
-  margin-left: 10px;
+	width: 15%;
+  height: 175px;
+  background-color: #7986CB;
+  border-radius: 5px;
+  text-align: center;
+  margin: 20px;
+  margin-left: 1px;
+  margin-right: 1px;
+  padding-top: 75px;
+  padding-left: 20px;
+  color: white;
+  font-size: 30px;
 }
 
 
@@ -86,12 +106,6 @@ ul#hearts li {
 	content: "";
 	display: table;
 	clear: both;
-}
-
-.grid-pad {
-	padding-top: 20px;
-	padding-left: 20px; /* grid-space to left */
-	padding-right: 0; /* grid-space to right: (grid-space-left - column-space) e.g. 20px-20px=0 */
 }
 
 .push-right {
