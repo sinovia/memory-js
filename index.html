@@ -6,14 +6,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.css">
     <link rel="stylesheet" href="/Users/Czechosinovia/Desktop/font-awesome-4.6.3/css/font-awesome.css">
     <link href="http://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <link rel="stylesheet" href="/Users/Czechosinovia/Desktop/TIY Assignments/memory-js/styles.css">
   </head>
   <body>
       <h1 class="GameTitle"> Mem<i class="fa fa-lightbulb-o" aria-hidden="true"></i>ry </h1>
-<!-- Heart Lifebar-->
+ <!-- Heart Lifebar ----------------------------------------------------------------->
       <div class="lifebar">
         <ul id="hearts">
-              <li class="life"> <i class="fa fa-heart" aria-hidden="true"></i></li>
+              <li class="life"><i class="fa fa-heart" aria-hidden="true"></i></li>
               <li class="life"><i class="fa fa-heart" aria-hidden="true"></i></li>
               <li class="life"><i class="fa fa-heart" aria-hidden="true"></i></li>
               <li class="life"><i class="fa fa-heart" aria-hidden="true"></i></li>
@@ -27,124 +28,220 @@
               <li class="life"><i class="fa fa-heart" aria-hidden="true"></i></li>
         </ul>
       </div>
-<!--Timer Section -->
+<!-- Timer ----------------------------------------------------------------->
 <div class ="timer"><label id="minutes">00</label>:<label id="seconds">00</label>
 </div>
 
-<!--Game Grid -->
-
+<!-- Game Grid ----------------------------------------------------------------->
 <div class="grid grid-pad">
 
-<!--Cards Row 1 -->
-    <div class="col-1-6 row1card1">
-       <div class="face front" <h3><i class="fa fa-deaf" aria-hidden="true"></i></h3> </div>
-       <div class="face back" <h3><i></i></h3></div>
-
-    </div>
-    <div class="col-1-6 row1card2">
-       <div class="content">
-           <h3><i class="fa fa-coffee" aria-hidden="true"></i></h3>
-       </div>
-    </div>
-    <div class="col-1-6 row1card3">
-       <div class="content">
-           <h3><i class="fa fa-motorcycle" aria-hidden="true"></i></h3>
-       </div>
-    </div>
-
-    <div class="col-1-6 row1card4">
-       <div class="content">
-           <h3><i class="fa fa-television" aria-hidden="true"></i></h3>
-       </div>
-    </div>
-    <div class="col-1-6 row1card5">
-       <div class="content">
-           <h3><i class="fa fa-pied-piper" aria-hidden="true"></i></h3>
-       </div>
-    </div>
-    <div class="col-1-6 row1card6">
-       <div class="content">
-           <h3><i class="fa fa-github-alt" aria-hidden="true"></i></h3>
-       </div>
-    </div>
-
-<!-- Cards Row  2 -------------------------------------------------------------------->
-<div class="col-1-6 row2card1">
-   <div class="content">
-       <h3><i class="fa fa-motorcycle" aria-hidden="true"></i></i></h3>
-   </div>
-
+<!-- Row 1 ----------------------------------------------------------------->
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
 </div>
-<div class="col-1-6 row2card2">
-   <div class="content">
-       <h3><i class="fa fa-android" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row2card3">
-   <div class="content">
-       <h3><i class="fa fa-motorcycle" aria-hidden="true"></i></h3>
-   </div>
-</div>
-
-<div class="col-1-6 row2card4">
-   <div class="content">
-       <h3><i class="fa fa-deaf" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row2card5">
-   <div class="content">
-       <h3><i class="fa fa-coffee" aria-hidden="true"></i></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row2card6">
-   <div class="content">
-       <h3><i class="fa fa-github-alt" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<!-- Cards Row  3 -------------------------------------------------------------------->
-<div class="col-1-6 row3card1">
-   <div class="content">
-       <h3><i class="fa fa-deaf" aria-hidden="true"></i></h3>
-   </div>
-
-</div>
-<div class="col-1-6 row3card2">
-   <div class="content">
-       <h3><i class="fa fa-coffee" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row3card3">
-   <div class="content">
-       <h3><i class="fa fa-motorcycle" aria-hidden="true"></i></h3>
-   </div>
-</div>
-
-<div class="col-1-6 row3card4">
-   <div class="content">
-       <h3><i class="fa fa-github-alt" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row3card5">
-   <div class="content">
-       <h3><i class="fa fa-television" aria-hidden="true"></i></h3>
-   </div>
-</div>
-<div class="col-1-6 row3card6">
-   <div class="content">
-       <h3><i class="fa fa-github-alt" aria-hidden="true"></i></h3>
-   </div>
 </div>
 
 
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<!-- Row 2 ----------------------------------------------------------------->
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
 
 
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
 
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+<!-- Row 2 ----------------------------------------------------------------->
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
+</div>
+
+<div class="col-1-6">
+<div class="card effect__click">
+  <div class="card__front">
+    <span class="card__text"><i class="fa fa-heart" aria-hidden="true"></i></span>
+  </div>
+  <div class="card__back">
+    <span class="card__text">Back of Card</span>
+  </div>
+</div>
 </div>
 
 
 
 
-
+<!--End Game Grid-->
 
 <script src="/Users/Czechosinovia/Desktop/TIY Assignments/memory-js/interaction.js"></script>
   </body>
