@@ -34,6 +34,20 @@ var minutesLabel = document.getElementById("minutes");
            card.addEventListener( "click", function() {
              var c = this.classList;
              c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
-           });
+               });
          }
        })();
+
+var count = 0
+
+$(".takeALife").click(function(){
+  count++;
+    $('#hearts li:last-child').remove();
+        console.log(count +" HEARTS TAKEN");
+    if (count === 12)
+    {$(".loserScreenModal").css("display", "block")}
+});
+
+$(".youLose").click(function(){
+    {$(".loserScreenModal").css("display", "block")}
+});
