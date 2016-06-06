@@ -22,24 +22,31 @@ var minutesLabel = document.getElementById("minutes");
                return valString;
            }
        };
-
+// CARD FUNCTIONS
        (function() {
          var cards = document.querySelectorAll(".card.effect__click");
          for ( var i  = 0, len = cards.length; i < len; i++ ) {
            var card = cards[i];
            clickListener( card );
          }
-
+          var track = 0
          function clickListener(card) {
            card.addEventListener( "click", function() {
+             track++
+             if (track === 1){
              var c = this.classList;
-             c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped");
+             c.contains("flipped") === true ? c.remove("flipped") : c.add("flipped","active");
+             console.log("flippage");
+
+           } else if (track === 2) {
+              console.log("whomp")
+            }
+
                });
          }
        })();
 
 var count = 0
-
 $(".takeALife").click(function(){
   count++;
     $('#hearts li:last-child').remove();
